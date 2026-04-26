@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>回神支持</title>
+  <style>
+    :root {
+      --bg: #faf5ec;
+      --card: rgba(255, 255, 255, 0.88);
+      --ink: #24312b;
+      --subtle: #5d6a64;
+      --accent: #4f7868;
+      --line: rgba(79, 120, 104, 0.14);
+      --warm: #d38763;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "SF Pro Text", sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(211, 135, 99, 0.12), transparent 30%),
+        linear-gradient(180deg, #fdf9f1 0%, var(--bg) 100%);
+      color: var(--ink);
+      line-height: 1.7;
+    }
+
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 20px 72px;
+    }
+
+    .hero,
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 18px 44px rgba(36, 49, 43, 0.06);
+    }
+
+    .hero {
+      padding: 32px 28px;
+      margin-bottom: 18px;
+    }
+
+    .card {
+      padding: 28px;
+      margin-top: 16px;
+    }
+
+    h1, h2 {
+      margin: 0 0 12px;
+      line-height: 1.15;
+    }
+
+    h1 {
+      font-size: clamp(32px, 6vw, 48px);
+      letter-spacing: -0.03em;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: var(--accent);
+    }
+
+    p, li {
+      font-size: 16px;
+      color: var(--ink);
+      margin: 0 0 12px;
+    }
+
+    .meta {
+      color: var(--subtle);
+      font-size: 14px;
+    }
+
+    .notice {
+      margin-top: 16px;
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: rgba(211, 135, 99, 0.12);
+      color: var(--subtle);
+      font-size: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.95em;
+      color: var(--warm);
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <h1>回神支持</h1>
+      <p class="meta">用于 App Store Connect 的 Support URL 页面</p>
+      <div class="notice">
+        当前默认回复时间：<code>3 个工作日内</code>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>联系支持</h2>
+      <p><code>回神</code> 是一款帮助你在被打断后更快回到任务的专注工具。</p>
+      <p>如果你在使用过程中遇到问题、想反馈建议，或希望申请功能改进，可以通过下面的方式联系我：</p>
+      <ul>
+        <li>支持邮箱：<code>382456538@qq.com</code></li>
+        <li>开发者：<code>jinchao cai</code></li>
+        <li>预计回复时间：<code>3 个工作日内</code></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>常见问题</h2>
+      <p><strong>为什么锁屏实时活动没有显示？</strong></p>
+      <ul>
+        <li>请确认系统已允许实时活动</li>
+        <li>请确认 <code>回神</code> 内已开启实时活动</li>
+        <li>请确认当前存在进行中的专注会话</li>
+      </ul>
+
+      <p><strong>为什么通知没有提醒我？</strong></p>
+      <ul>
+        <li>请检查系统是否已授予通知权限</li>
+        <li>请检查 App 内是否开启通知</li>
+        <li>请检查 iPhone 当前系统模式是否影响提醒显示</li>
+      </ul>
+
+      <p><strong>购买了 <code>回神 Pro</code> 但没有解锁成功怎么办？</strong></p>
+      <p>你可以先在 App 内点击 <code>恢复购买</code>。如果仍未恢复，请联系支持邮箱，并尽量提供设备型号、iOS 版本和问题提示。</p>
+    </section>
+
+    <section class="card">
+      <h2>反馈建议</h2>
+      <p>如果你希望 <code>回神</code> 变得更适合你的工作流，也欢迎告诉我：</p>
+      <ul>
+        <li>你最常见的打断来源是什么</li>
+        <li>你希望增加什么样的恢复提醒</li>
+        <li>你最想看到哪些统计或复盘视角</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>隐私说明</h2>
+      <p><code>回神</code> 以本地优先为设计原则。关于数据处理方式，请查看隐私政策页面。</p>
+    </section>
+  </main>
+</body>
+</html>
